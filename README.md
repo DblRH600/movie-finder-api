@@ -23,23 +23,18 @@ This project follows RESTful API principles to ensure a clean, scalable, and pre
 ### Key Concepts
 - [] Client-Server Separation: The frontend and backend operate independently. Clients interact with the server via clearly defined endpoints (URIs).
 
-- [] Stateless Requests: Each request includes all necessary information. The server does not remember previous interactions.
+- Stateless Requests: Each request includes all necessary information. The server does not remember previous interactions.
 
-- [] Uniform Interface:
+- Uniform Interface:
+    - Resource-Based URLs: Use nouns to represent resources (e.g., /api/movies/search).
 
-    - [] Resource-Based URLs: Use nouns to represent resources (e.g., /api/movies/search).
+    - HTTP Methods:
+        - GET: Retrieve data
+        - POST: Create new data
+        - PUT / PATCH: Update data
+        - DELETE: Remove data
 
-    - [] HTTP Methods:
-
-        - [] GET: Retrieve data
-
-        - [] POST: Create new data
-
-        - [] PUT / PATCH: Update data
-
-        - [] DELETE: Remove data
-
-    - [] Standard Format: Data is exchanged in JSON.
+    - Standard Format: Data is exchanged in JSON.
 
 Understanding these REST principles is essential before working with or extending this API.
 
