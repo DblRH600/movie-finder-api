@@ -31,7 +31,7 @@ export const getMovieDetails = async (req, res) => {
   const movieId = req.params.id
 
   try {
-    const apiResponse = await movieClient.get(`/?s=${movieId}`)
+    const apiResponse = await movieClient.get(`/?i=${movieId}`)
 
     const data = apiResponse.data
 
