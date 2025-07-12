@@ -21,7 +21,7 @@ This is a solution using Express to the [Module 12 SBA](https://ps-lms.vercel.ap
 This project follows RESTful API principles to ensure a clean, scalable, and predictable architecture for web services.
 
 ### Key Concepts
-- [] Client-Server Separation: The frontend and backend operate independently. Clients interact with the server via clearly defined endpoints (URIs).
+- Client-Server Separation: The frontend and backend operate independently. Clients interact with the server via clearly defined endpoints (URIs).
 
 - Stateless Requests: Each request includes all necessary information. The server does not remember previous interactions.
 
