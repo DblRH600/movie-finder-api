@@ -100,7 +100,7 @@ export const getMovieDetails = async (req, res) => {
   const movieId = req.params.id
 
   try {
-    const apiResponse = await movieClient.get(`/?s=${movieId}`)
+    const apiResponse = await movieClient.get(`/?i=${movieId}`)
 
     const data = apiResponse.data
 
@@ -121,16 +121,16 @@ export const getMovieDetails = async (req, res) => {
 
 ### Continued development
 
-I need to build futher understanding on where the **useState** hook should be placed and when to utilize ***props*** when passing functionality between parent and component connections. Understanding how to develop custom hooks was crucial to the productivity and reusability of the code blocks. This project also tested the ability to use context functions effectively.
+There is still a *well* of *informaiton* to learn and *apply* regarding the use of **Express**, **Axios**, and the many functions and performances that can be used in setting up a **server**. Gaining a deeper understanding will help with the next phases of ***Full-Stack*** Development; connecting to a **Database** then establishing the **Front-End** to **Server** to **DB** (*Back-End*) connection.
 
 ### Reflections
 
 ### Useful resources
 
-- [Documentation: React](https://react.dev/reference/react) - ***React.dev*** provides useful documentation and examples for how to use **useState** and **useCallback** hooks.
+- [EXPRESSJS.COM](https://expressjs.com/en/5x/api.html#res.sendFile) - ***expressjs.com*** contains well documented information details about **routes**.
 
-- [Documentation: The Bitly API](https://dev.bitly.com/?_gl=1*18syhe2*_gcl_au*MzI4MzI3MzM5LjE3NDkyMjY0MzcuMTcwMTE2NjY1NC4xNzQ5MjI5MTQ3LjE3NDkyMjkyMTE.) - This is site helped with my understanding of how to use the API for this website.
+- [AXIOS](https://axios-http.com/docs/intro) - ***axios.com*** can be used to deepen one's understanding about the functionality **axios** is capable of performing that can be incorporated into a **server**.
+
+- [REST API Tutorial](https://restfulapi.net/) - ***restfulapi.net*** provides background information and tutroials on how to build web-based **APIs** (*Application Programming Interfaces*).
 
 ## Acknowledgments
-
-I want express aprpeciation to Abraham Tavarez Colton Wright for their help with understading how to connect the ***API Token*** from *bitly.com*, and how **useState** should be implemented in order for its use for each **component** impacted. Additional shout out to [Dev-Lawrence](https://www.youtube.com/watch?v=BKwu82wekLU&t=136s) for the reat tutorial on the Frontend Mentor project
